@@ -1,5 +1,7 @@
 # 🎓 Faculty Appraisal Portal
 
+🌐 **Live Demo**: [https://faculty-appraisal-web-portal.vercel.app/](https://faculty-appraisal-web-portal.vercel.app/)
+
 ---
 
 ## 🌟 The Challenge We're Solving
@@ -340,7 +342,7 @@ Here's what your complete `server/.env` file should look like:
 
 ```env
 PORT=6005
-MONGODB_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/faculty-portal
+MONGODB_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net
 CORS_ORIGIN=*
 ACCESS_TOKEN_SECRET=acCeSsToKeN-madeByHimansHuMisHRa
 ACCESS_TOKEN_EXPIRY=1d

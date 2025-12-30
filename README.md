@@ -27,7 +27,7 @@ We've built a platform that doesn't just solve problems; it transforms the entir
 ### What Makes Our Solution Different?
 
 **For Faculty Members:**
-Our portal offers a seamless, intuitive environment where educators can effortlessly document their professional activities. Whether it's research publications, seminars conducted, projects undertaken, or guest lectures delivered—everything is tracked in one centralized, secure platform. No more scattered documents, no more forgotten achievements, no more hours wasted on paperwork. Faculty members can update their profiles in real-time, ensuring their accomplishments are immediately visible and properly recognized.
+Our portal offers a seamless, intuitive environment where educators can effortlessly document their professional activities. Whether it's research publications, seminars/workshops conducted, projects undertaken, students guided, short term training programs conducted, event participations, guest lectures delivered, other significant contributions made toward the growth of their own skill or towards the growth of the institution, everything is tracked in one centralized, secure platform. No more scattered documents, no more forgotten achievements, no more hours wasted on paperwork. Faculty members can update their profiles in real-time, ensuring their accomplishments are immediately visible and properly recognized.
 
 The system integrates automated tracking capabilities, capturing research outputs dynamically—similar to how Google Scholar operates—eliminating manual entry errors and saving precious time. Faculty can focus on what they do best: teaching, researching, and inspiring students.
 

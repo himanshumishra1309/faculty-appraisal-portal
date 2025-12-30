@@ -164,12 +164,6 @@ const FacultyLayout = () => {
           >
             <div className="flex justify-between items-center p-4">
               <h1 className="text-xl font-bold">Faculty Portal</h1>
-              <button
-                onClick={handleDownloadPDF}
-                className="bg-blue-500 text-white p-2 rounded shadow hover:bg-blue-600 transition"
-              >
-                Download Detailed Report
-              </button>
             </div>
             <div className="flex-1 overflow-auto p-4 bg-gray-100">
               {navigation.state === "loading" ? <LoadingPage /> : <Outlet />}

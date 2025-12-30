@@ -4,7 +4,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
-import FeedbackSubmitterTable from "./UpcomingSeminars/feedbackSubmitterTable";
+import FeedbackSubmitterTable from "./UpcomingSeminars/FeedbackSubmitterTable";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Dialog, DialogContent } from "@/components/ui/dialog";

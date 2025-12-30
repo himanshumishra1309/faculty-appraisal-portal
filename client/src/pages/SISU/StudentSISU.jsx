@@ -93,12 +93,9 @@ export default function StudentSISU() {
       ("/student-home");
     } catch (error) {
       setIsLoading(false);
-      console.error("Error during signup:", error.message);
-      toast.success("Signup failed. Please try again.");
-      // alert("Signup failed. Please try again.");
-    }
-    finally{
-      setIsLoading(false);
+      console.error("Error during signup:", error);
+      console.error("Error response:", error.response?.data);
+      toast.error(error.response?.data?.message || "Signup failed. Please try again.");
     }
   };
 

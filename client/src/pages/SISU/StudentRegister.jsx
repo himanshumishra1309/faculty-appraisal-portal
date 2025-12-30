@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { GraduationCap } from "lucide-react";
+import LoadingPage from "../LoadingPage";
 
 export default function StudentRegister() {
   const [isLoading, setIsLoading] = useState(false)
@@ -56,14 +57,13 @@ export default function StudentRegister() {
       // console.log("Hellow2")
 
       console.log(response);
-      alert("Registration successful"); 
+      alert("Registration successful");
+      setIsLoading(false);
     } catch (error) {
       setIsLoading(false);
-      console.error("Error during signup:", error.message);
-      alert("Signup failed. Please try again.");
-    }
-     finally{
-      setIsLoading(false);
+      console.error("Error during signup:", error);
+      console.error("Error response:", error.response?.data);
+      alert(error.response?.data?.message || "Signup failed. Please try again.");
     }
   };
 
@@ -109,24 +109,34 @@ export default function StudentRegister() {
           required
           className="w-full p-2 mb-3 border rounded"
         />
-        <input
-          type="text"
+        <select
           id="branch"
-          placeholder="Branch"
           value={signupData.branch}
           onChange={handleSignupChange}
           required
-          className="w-full p-2 mb-3 border rounded"
-        />
-        <input
-          type="text"
+          className="w-full p-2 mb-3 border rounded bg-white"
+        >
+          <option value="">Select Branch</option>
+          <option value="CSE">CSE</option>
+          <option value="IT">IT</option>
+          <option value="EXTC">EXTC</option>
+          <option value="EE">EE</option>
+          <option value="ME">ME</option>
+          <option value="CE">CE</option>
+        </select>
+        <select
           id="year"
-          placeholder="Year"
           value={signupData.year}
           onChange={handleSignupChange}
           required
-          className="w-full p-2 mb-3 border rounded"
-        />
+          className="w-full p-2 mb-3 border rounded bg-white"
+        >
+          <option value="">Select Year</option>
+          <option value="First">First</option>
+          <option value="Second">Second</option>
+          <option value="Third">Third</option>
+          <option value="Fourth">Fourth</option>
+        </select>
         <input
           type="password"
           id="password"

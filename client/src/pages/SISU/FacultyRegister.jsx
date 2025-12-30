@@ -184,15 +184,21 @@ export default function FacultyRegister() {
             >
               Department
             </label>
-            <input
-              type="text"
+            <select
               id="department"
-              placeholder="Department"
               value={signupData.department}
               onChange={handleSignupChange}
               required
-              className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            />
+              className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white"
+            >
+              <option value="">Select Department</option>
+              <option value="CSE">CSE</option>
+              <option value="IT">IT</option>
+              <option value="ENTC">ENTC</option>
+              <option value="ME">ME</option>
+              <option value="EE">EE</option>
+              <option value="CE">CE</option>
+            </select>
           </div>
           <div className="mb-4">
             <label
@@ -201,15 +207,18 @@ export default function FacultyRegister() {
             >
               Designation
             </label>
-            <input
-              type="text"
+            <select
               id="designation"
-              placeholder="Designation"
               value={signupData.designation}
               onChange={handleSignupChange}
               required
-              className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-            />
+              className="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-white"
+            >
+              <option value="">Select Designation</option>
+              <option value="Assistant Professor">Assistant Professor</option>
+              <option value="HOD">HOD</option>
+              <option value="Principal">Principal</option>
+            </select>
           </div>
           <div className="mb-4">
             <label

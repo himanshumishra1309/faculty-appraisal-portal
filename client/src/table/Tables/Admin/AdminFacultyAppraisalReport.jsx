@@ -93,7 +93,8 @@ const AdminFacultyAppraisalReport = ({
 
       setAppraisalData(formattedData);
     } catch (error) {
-      console.error("Error fetching appraisal data:", error.message);
+      console.error("Error fetching appraisal data:", error);
+      console.error("Error response:", error.response?.data);
     }
   };
 

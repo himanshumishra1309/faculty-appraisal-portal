@@ -135,10 +135,11 @@ export default function EventRsvp({ seminarId }) {
       } else if (error instanceof z.ZodError) {
         setErrors(error.flatten().fieldErrors);
       } else {
-        console.error("Error:", error.message);
+        console.error("Error:", error);
+        console.error("Error response:", error.response?.data);
         toast({
           title: "Error",
-          description: "An unexpected error occurred.",
+          description: error.response?.data?.message || "An unexpected error occurred.",
           duration: 3000,
         });
       }

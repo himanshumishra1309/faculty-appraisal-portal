@@ -52,6 +52,7 @@ import AdminPointAllocationLayout from './Layouts/AdminPointAllocationLayout';
 import HODTaskDistributionLayout from './Layouts/HODTaskDistributionLayout';
 import WeightageDistributionLayout from './Layouts/WeightageDistributionLayout';
 import FacultyAppraisalRankingTable from './table/Tables/FacultyAppraisalRankingTable';
+import AdminEditProfile from './components/EditProfile/AdminEditProfile';
 
 
 
@@ -82,6 +83,8 @@ const router = createBrowserRouter(
 <Route path="weightage-distribution" element={<RouteTransitionWrapper><WeightageDistributionLayout/></RouteTransitionWrapper>} errorElement={<NotFoundPage/>} />
 
 <Route path="appraisal-ranking" element={<RouteTransitionWrapper><FacultyAppraisalRankingTable/></RouteTransitionWrapper>} errorElement={<NotFoundPage/>} />
+
+<Route path="edit-profile" element={<RouteTransitionWrapper><AdminEditProfile/></RouteTransitionWrapper>} errorElement={<NotFoundPage/>} />
     </Route>
 
 

@@ -43,7 +43,7 @@ const FacultyAppraisalReport = ({
       setIsLoading(true);
       try {
         const response = await axios.get(
-          "http://localhost:6005/api/v1/teachers/me",
+          "https://faculty-appraisal-portal.vercel.app/api/v1/teachers/me",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem(
@@ -73,17 +73,17 @@ const FacultyAppraisalReport = ({
       const id = facultyData._id;
 
       const endpoints = {
-        journals: `http://localhost:6005/api/v1/points/journals/${id}`,
-        books: `http://localhost:6005/api/v1/points/books/${id}`,
-        chapter: `http://localhost:6005/api/v1/points/chapter/${id}`,
-        patents: `http://localhost:6005/api/v1/points/patents/${id}`,
-        conferences: `http://localhost:6005/api/v1/points/conferences/${id}`,
-        projects: `http://localhost:6005/api/v1/points/projects/${id}`,
-        events: `http://localhost:6005/api/v1/points/events/${id}`,
-        sttp: `http://localhost:6005/api/v1/points/sttp/${id}`,
-        "expert-lectures": `http://localhost:6005/api/v1/points/expert-lectures/${id}`,
-        "Student-Guide": `http://localhost:6005/api/v1/points/student-guided/${id}`,
-        lecture: `http://localhost:6005/api/v1/points/lecture/${id}`,
+        journals: `https://faculty-appraisal-portal.vercel.app/api/v1/points/journals/${id}`,
+        books: `https://faculty-appraisal-portal.vercel.app/api/v1/points/books/${id}`,
+        chapter: `https://faculty-appraisal-portal.vercel.app/api/v1/points/chapter/${id}`,
+        patents: `https://faculty-appraisal-portal.vercel.app/api/v1/points/patents/${id}`,
+        conferences: `https://faculty-appraisal-portal.vercel.app/api/v1/points/conferences/${id}`,
+        projects: `https://faculty-appraisal-portal.vercel.app/api/v1/points/projects/${id}`,
+        events: `https://faculty-appraisal-portal.vercel.app/api/v1/points/events/${id}`,
+        sttp: `https://faculty-appraisal-portal.vercel.app/api/v1/points/sttp/${id}`,
+        "expert-lectures": `https://faculty-appraisal-portal.vercel.app/api/v1/points/expert-lectures/${id}`,
+        "Student-Guide": `https://faculty-appraisal-portal.vercel.app/api/v1/points/student-guided/${id}`,
+        lecture: `https://faculty-appraisal-portal.vercel.app/api/v1/points/lecture/${id}`,
       };
 
       try {
@@ -120,7 +120,7 @@ const FacultyAppraisalReport = ({
     const fetchRank = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:6005/api/v1/points/teacher-ranks",
+          "https://faculty-appraisal-portal.vercel.app/api/v1/points/teacher-ranks",
           {
             headers: {
               Authorization: `Bearer ${sessionStorage.getItem(

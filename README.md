@@ -4,6 +4,8 @@
 
 📚 **Documentation**: [https://www.notion.so/Faculty-Appraisal-System-2d9e01623804802dba97cf397f7047ef](https://www.notion.so/Faculty-Appraisal-System-2d9e01623804802dba97cf397f7047ef)
 
+🎥 **Video Demo**: [https://youtu.be/YrzR0nACzPA](https://youtu.be/YrzR0nACzPA)
+
 ---
 
 ## 🌟 The Challenge We're Solving

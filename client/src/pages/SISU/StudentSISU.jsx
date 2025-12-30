@@ -74,6 +74,7 @@ export default function StudentSISU() {
     formData.append("password", signupData.password);
 
     try {
+      setIsLoading(true);
       const response = await axios.post(
         "https://faculty-appraisal-portal.vercel.app/api/v1/students/register",
         formData,
@@ -91,6 +92,7 @@ export default function StudentSISU() {
       navigate;
       ("/student-home");
     } catch (error) {
+      setIsLoading(false);
       console.error("Error during signup:", error.message);
       toast.success("Signup failed. Please try again.");
       // alert("Signup failed. Please try again.");
@@ -142,10 +144,10 @@ export default function StudentSISU() {
   // };
 
   const handleLoginSubmit = async (e) => {
-    setIsLoading(true);
     e.preventDefault();
-
+    
     try {
+      setIsLoading(true);
       const response = await axios.post(
         "https://faculty-appraisal-portal.vercel.app/api/v1/students/login",
         loginData,
@@ -169,6 +171,7 @@ export default function StudentSISU() {
         throw new Error("Access token is missing in the response");
       }
     } catch (error) {
+      setIsLoading(false);
       const errorMessage = error.response?.data?.message || error.message;
       console.error("Error during login:", errorMessage);
       // toast.error("Login failed. Please try again.");

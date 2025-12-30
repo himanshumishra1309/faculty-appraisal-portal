@@ -77,6 +77,7 @@ const [isLoading, setIsLoading] = useState(false);
     if (avatar) formData.append("avatar", avatar);
 
     try {
+      setIsLoading(true);
       const response = await axios.post(
         "https://faculty-appraisal-portal.vercel.app/api/v1/admins/register",
         formData,
@@ -86,6 +87,7 @@ const [isLoading, setIsLoading] = useState(false);
       sessionStorage.setItem("adminAccessToken", accessToken);
       navigate("/admin");
     } catch (error) {
+      setIsLoading(false);
       console.error("Error during signup:", error);
       alert("Signup failed. Please try again.");
     }
@@ -95,6 +97,7 @@ const [isLoading, setIsLoading] = useState(false);
     setIsLoading(true);
     e.preventDefault();
     try {
+      setIsLoading(true);
       const response = await axios.post(
         "https://faculty-appraisal-portal.vercel.app/api/v1/admins/login",
         loginData,

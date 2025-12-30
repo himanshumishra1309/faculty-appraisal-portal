@@ -71,7 +71,6 @@ export default function FacultySISU() {
   };
 
   const handleSignUpSubmit = async (e) => {
-    setIsLoading(true);
     e.preventDefault();
     const formData = new FormData();
     formData.append("name", signupData.name);
@@ -82,6 +81,7 @@ export default function FacultySISU() {
     formData.append("avatar", avatar);
 
     try {
+      setIsLoading(true);
       const response = await axios.post(
         "https://faculty-appraisal-portal.vercel.app/api/v1/teachers/register",
         formData
@@ -101,6 +101,7 @@ export default function FacultySISU() {
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
     try {
+      setIsLoading(true);
       const response = await axios.post(
         "https://faculty-appraisal-portal.vercel.app/api/v1/teachers/login",
         loginData
@@ -111,6 +112,7 @@ export default function FacultySISU() {
         state: { justLoggedIn: true },
       });
     } catch (error) {
+      setIsLoading(false);
       console.error(
         "Error during login:",
         error.response?.data?.message || error.message

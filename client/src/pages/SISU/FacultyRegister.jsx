@@ -37,7 +37,6 @@ export default function FacultyRegister() {
   };
 
   const handleSignUpSubmit = async (e) => {
-    setIsLoading(true);
     e.preventDefault();
 
     const {
@@ -74,8 +73,8 @@ export default function FacultyRegister() {
     }
 
     try {
+      setIsLoading(true);
       const token = sessionStorage.getItem("adminAccessToken");
-      console.log("hellow1");
       const response = await axios.post(
         "https://faculty-appraisal-portal.vercel.app/api/v1/admins/register-teacher",
         formData,
@@ -86,10 +85,7 @@ export default function FacultyRegister() {
         }
       );
 
-      console.log("hellow2");
-
       alert("Faculty account created successfully!");
-      console.log("Response:", response.data);
 
       setSignupData({
         name: "",
@@ -104,6 +100,7 @@ export default function FacultyRegister() {
       setAvatar(null);
       setAvatarPreview("");
     } catch (error) {
+      setIsLoading(false);
       console.error(
         "Error during faculty signup:",
         error.response?.data?.message || error.message

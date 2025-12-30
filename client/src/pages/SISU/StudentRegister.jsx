@@ -32,7 +32,6 @@ export default function StudentRegister() {
   };
 
   const handleSignUpSubmit = async (e) => {
-    setIsLoading(true);
     e.preventDefault();
 
     const formData = new FormData();
@@ -42,6 +41,7 @@ export default function StudentRegister() {
     formData.append("avatar", avatar);
 
     try {
+      setIsLoading(true);
       const token = sessionStorage.getItem("adminAccessToken");
       console.log("Hellow1")
       const response = await axios.post(
@@ -58,6 +58,7 @@ export default function StudentRegister() {
       console.log(response);
       alert("Registration successful"); 
     } catch (error) {
+      setIsLoading(false);
       console.error("Error during signup:", error.message);
       alert("Signup failed. Please try again.");
     }

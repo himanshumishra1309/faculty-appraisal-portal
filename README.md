@@ -80,7 +80,7 @@ Before you begin, make sure you have the following installed on your system:
 Open your terminal and run:
 
 ```bash
-git clone https://github.com/your-username/faculty-appraisal-portal.git
+git clone https://github.com/himanshumishra1309/faculty-appraisal-portal.git
 cd faculty-appraisal-portal
 ```
 

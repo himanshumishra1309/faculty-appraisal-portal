@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import LoadingPage from "../LoadingPage";
 
 export default function FacultyRegister() {
+  const [isLoading, setIsLoading] = useState(false)
   const [signupData, setSignupData] = useState({
     name: "",
     email: "",
@@ -35,6 +37,7 @@ export default function FacultyRegister() {
   };
 
   const handleSignUpSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
 
     const {
@@ -110,7 +113,14 @@ export default function FacultyRegister() {
           "Failed to create faculty account. Please try again."
       );
     }
+    finally{
+      setIsLoading(false);
+    }
   };
+
+  if(isLoading){
+  return <LoadingPage/>;
+  }
 
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center bg-gray-100">

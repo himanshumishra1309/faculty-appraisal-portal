@@ -4,8 +4,10 @@ import axios from "axios";
 import { UserPlus, UserCheck, BookOpen } from "lucide-react";
 import "../SISU/SISU.css";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import LoadingPage from "../LoadingPage";
 
 export default function FacultySISU() {
+  const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate();
 
   const [signupData, setSignupData] = useState({
@@ -69,6 +71,7 @@ export default function FacultySISU() {
   };
 
   const handleSignUpSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
     const formData = new FormData();
     formData.append("name", signupData.name);
@@ -114,7 +117,15 @@ export default function FacultySISU() {
       );
       alert("Login failed. Please try again.");
     }
+        finally{
+      setIsLoading(false);
+    }
   };
+
+  
+  if(isLoading){
+  return <LoadingPage/>;
+  }
 
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-900 to-blue-700">

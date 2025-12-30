@@ -9,6 +9,7 @@ import { Button } from "../../components/ui/button";
 // import "react-toastify/dist/ReactToastify.css";
 
 export default function StudentSISU() {
+  const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate();
   const [signupData, setSignupData] = useState({
     name: "",
@@ -60,6 +61,7 @@ export default function StudentSISU() {
   };
 
   const handleSignUpSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
 
     const formData = new FormData();
@@ -92,6 +94,9 @@ export default function StudentSISU() {
       console.error("Error during signup:", error.message);
       toast.success("Signup failed. Please try again.");
       // alert("Signup failed. Please try again.");
+    }
+    finally{
+      setIsLoading(false);
     }
   };
 
@@ -137,6 +142,7 @@ export default function StudentSISU() {
   // };
 
   const handleLoginSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
 
     try {
@@ -168,7 +174,15 @@ export default function StudentSISU() {
       // toast.error("Login failed. Please try again.");
       alert("Login failed. Please try again.");
     }
+    finally{
+      setIsLoading(false);
+    }
   };
+
+  if(isLoading){
+  return <LoadingPage/>;
+  }
+
 
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-900 to-blue-700">

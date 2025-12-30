@@ -3,8 +3,11 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { UserCog, ClipboardList } from 'lucide-react';
 import { Label } from "@/components/ui/label";
+import LoadingPage from "../LoadingPage";
 
 export default function AdminSISU() {
+const [isLoading, setIsLoading] = useState(false);
+
   const navigate = useNavigate();
   const [signupData, setSignupData] = useState({
     name: "",
@@ -89,6 +92,7 @@ export default function AdminSISU() {
   };
 
   const handleLoginSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
     try {
       const response = await axios.post(
@@ -107,8 +111,14 @@ export default function AdminSISU() {
       console.error("Error during login:", error);
       alert("Login failed. Please try again.");
     }
+    finally {
+    setIsLoading(false);
+  }
   };
 
+  if (isLoading) {
+  return <LoadingPage />;
+}
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-700 to-blue-900">
       <div className="mb-8 text-center">

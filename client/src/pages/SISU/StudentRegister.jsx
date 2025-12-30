@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { GraduationCap } from "lucide-react";
 
 export default function StudentRegister() {
+  const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate();
   const [signupData, setSignupData] = useState({
     name: "",
@@ -31,6 +32,7 @@ export default function StudentRegister() {
   };
 
   const handleSignUpSubmit = async (e) => {
+    setIsLoading(true);
     e.preventDefault();
 
     const formData = new FormData();
@@ -59,8 +61,16 @@ export default function StudentRegister() {
       console.error("Error during signup:", error.message);
       alert("Signup failed. Please try again.");
     }
+     finally{
+      setIsLoading(false);
+    }
   };
 
+    if(isLoading){
+  return <LoadingPage/>;
+  }
+
+  
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-900 to-blue-700">
       <GraduationCap className="text-white mb-4" size={64} />

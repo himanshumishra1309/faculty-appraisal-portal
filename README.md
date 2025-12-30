@@ -188,7 +188,7 @@ A popup will appear asking you to create a database user:
 2. Select **"Compass"** (or "Drivers" works too)
 3. You'll see a connection string that looks like:
    ```
-   mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/
+   mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net
    ```
 4. **Copy this entire URL**
 

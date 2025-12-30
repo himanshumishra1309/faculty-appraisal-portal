@@ -73,7 +73,7 @@ const Landing = () => {
           <p className="text-lg">We are Team Blaze Brains, the divine architects of innovation, destined to scorch mediocrity and ignite brilliance at SIH 2024. Gods? Overrated. We've surpassed them with code and caffeine. Logic bows to our audacity, and reality trembles under our genius. The universe wasn’t ready for us, but here we are, rewriting existence one line of code at a time. Worship? No thanks. Just watch us blaze a trail of impossible made real.</p>
         </div>
         <div className="py-20">
-          <img src="assets\icons\AICTE.png"/>
+          <img src="/icons/AICTE.png"/>
         </div>
       </div>
 

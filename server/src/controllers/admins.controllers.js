@@ -28,17 +28,6 @@ import { Contribution } from "../models/extraContributions.models.js";
 import { Book } from "../models/books.models.js";
 import { SeminarAttended } from "../models/seminarAttended.models.js";
 import mongoose from "mongoose";
-import nodemailer from "nodemailer";
-
-const transport = nodemailer.createTransport({
-  host: "smtp.gmail.com", // Gmail SMTP server
-  port: 587, // Secure connection
-  secure: false, // Use TLS
-  auth: {
-    user: process.env.EMAIL_USER, // Your Gmail email
-    pass: process.env.EMAIL_PASS, // Your Gmail password or app password
-  },
-});
 
 const generateAccessAndRefreshToken = async (userId) => {
   try {

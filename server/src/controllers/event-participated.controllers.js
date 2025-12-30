@@ -2,8 +2,6 @@ import { ApiResponse } from "../utils/ApiResponse.js";
 import { asyncHandler } from "../utils/AsyncHandler2.js";
 import { ApiError } from "../utils/ApiErrors.js";
 import { EventParticipation } from "../models/events-participated.models.js";
-import { uploadOnCloudinary } from "../utils/cloudinary.js";
-import { v2 as cloudinary } from "cloudinary";
 import { uploadToSupabase } from "../utils/supabase-upload.js";
 
 // All routes checked, including delete and update

@@ -19,6 +19,9 @@ const generateAccessAndRefreshToken = async (userId) => {
     const teacherAccessToken = teacher.generateAccessToken();
     const teacherRefreshToken = teacher.generateRefreshToken();
 
+    console.log("teacherAccessToken: ", teacherAccessToken)
+    console.log("teacherRefreshToken: ", teacherRefreshToken)
+
     // Update teacher's refresh token in the database
     teacher.refreshToken = teacherRefreshToken;
 

@@ -39,7 +39,7 @@ export default function AdminProjectTable() {
         const token = sessionStorage.getItem("adminAccessToken");
 
         const response = await axios.get(
-          `http://localhost:6005/api/v1/admins/teachers/${id}/projects`,
+          `https://faculty-appraisal-portal.vercel.app/api/v1/admins/teachers/${id}/projects`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

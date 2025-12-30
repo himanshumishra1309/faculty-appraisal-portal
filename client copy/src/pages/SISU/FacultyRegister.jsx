@@ -74,7 +74,7 @@ export default function FacultyRegister() {
       const token = sessionStorage.getItem("adminAccessToken");
       console.log("hellow1");
       const response = await axios.post(
-        "http://localhost:6005/api/v1/admins/register-teacher",
+        "https://faculty-appraisal-portal.vercel.app/api/v1/admins/register-teacher",
         formData,
         {
           headers: {

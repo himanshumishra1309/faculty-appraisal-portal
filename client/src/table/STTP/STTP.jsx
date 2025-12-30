@@ -40,7 +40,7 @@ export default function STTPTable() {
   //       const token = sessionStorage.getItem("adminAccessToken"); // Adjust this if using cookies
 
   //       const response = await axios.get(
-  //         `http://localhost:6005/api/v1/admins/teachers/${id}`, // Adjust URL to your API endpoint
+  //         `https://faculty-appraisal-portal.vercel.app/api/v1/admins/teachers/${id}`, // Adjust URL to your API endpoint
   //         {
   //           headers: {
   //             Authorization: `Bearer ${token}`, // Set the Authorization header
@@ -64,7 +64,7 @@ export default function STTPTable() {
         const token = sessionStorage.getItem("adminAccessToken"); // Adjust this if using cookies
 
         const response = await axios.get(
-          `http://localhost:6005/api/v1/admins/teachers/${id}/research-papers`,
+          `https://faculty-appraisal-portal.vercel.app/api/v1/admins/teachers/${id}/research-papers`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

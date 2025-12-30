@@ -119,7 +119,7 @@ const PostsPage = () => {
     try {
       const teacherAccessToken = sessionStorage.getItem("teacherAccessToken");
       const response = await axios.get(
-        "http://localhost:6005/api/v1/posts/post/get",
+        "https://faculty-appraisal-portal.vercel.app/api/v1/posts/post/get",
         {
           headers: {
             Authorization: `Bearer ${teacherAccessToken}`,
@@ -168,7 +168,7 @@ const PostsPage = () => {
 
       // Make the POST request with the teacher access token in the Authorization header
       const response = await axios.post(
-        "http://localhost:6005/api/v1/posts/post/create",
+        "https://faculty-appraisal-portal.vercel.app/api/v1/posts/post/create",
         formData,
         {
           headers: {
@@ -220,7 +220,7 @@ const PostsPage = () => {
 
       // Send the request to the server to update the post
       const response = await axios.patch(
-        `http://localhost:6005/api/v1/posts/post/update/${p.id}`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/posts/post/update/${p.id}`,
         formData,
         {
           headers: {

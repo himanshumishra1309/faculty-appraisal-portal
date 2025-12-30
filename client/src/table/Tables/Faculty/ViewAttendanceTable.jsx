@@ -45,7 +45,7 @@ export default function ViewAttendanceTable({ lectureData }) {
         const token = sessionStorage.getItem("teacherAccessToken");
 
         const response = await axios.get(
-          `http://localhost:6005/api/v1/lecture/${lectureId}/viewattendance`,
+          `https://faculty-appraisal-portal.vercel.app/api/v1/lecture/${lectureId}/viewattendance`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -136,7 +136,7 @@ export default function ViewAttendanceTable({ lectureData }) {
       const token = sessionStorage.getItem("teacherAccessToken");
 
       await axios.delete(
-        `http://localhost:6005/api/v1/projects/projects/${rowToDelete._id}`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/projects/projects/${rowToDelete._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -260,7 +260,7 @@ export default function ViewAttendanceTable({ lectureData }) {
               //   console.log(`${key}:`, value);
               // }
               const response = await axios.patch(
-                `http://localhost:6005/api/v1/projects/projects/${rowToEdit._id}`,
+                `https://faculty-appraisal-portal.vercel.app/api/v1/projects/projects/${rowToEdit._id}`,
                 formData,
                 {
                   headers: {
@@ -273,7 +273,7 @@ export default function ViewAttendanceTable({ lectureData }) {
             } else {
               console.log("posting the data", formData);
               const response = await axios.post(
-                `http://localhost:6005/api/v1/projects/projects`,
+                `https://faculty-appraisal-portal.vercel.app/api/v1/projects/projects`,
                 formData,
                 {
                   headers: {

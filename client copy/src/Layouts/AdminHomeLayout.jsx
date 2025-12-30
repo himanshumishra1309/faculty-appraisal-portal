@@ -27,7 +27,7 @@ const AdminHomeLayout = () => {
 //           Authorization: `Bearer ${accessToken}`,
 //         };
 //         const response = await axios.get(
-//           "http://localhost:6005/api/v1/teachers/me",
+//           "https://faculty-appraisal-portal.vercel.app/api/v1/teachers/me",
 //           { headers }
 //         );
 //         console.log("Faculty data fetched:", response.data);

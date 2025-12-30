@@ -31,19 +31,19 @@ export default function AppraisalReportTable() {
   const [appraisalData, setAppraisalData] = useState([]);
 
   const endpoints = {
-    journals: `http://localhost:6005/api/v1/points/journals/${id}`,
-    books: `http://localhost:6005/api/v1/points/books/${id}`,
-    chapter: `http://localhost:6005/api/v1/points/chapter/${id}`,
-    patents: `http://localhost:6005/api/v1/points/patents/${id}`,
-    conferences: `http://localhost:6005/api/v1/points/conferences/${id}`,
-    projects: `http://localhost:6005/api/v1/points/projects/${id}`,
-    events: `http://localhost:6005/api/v1/points/events/${id}`,
-    sttp: `http://localhost:6005/api/v1/points/sttp/${id}`,
-    "expert-lectures": `http://localhost:6005/api/v1/points/expert-lectures/${id}`,
-    "Student-Guide": `http://localhost:6005/api/v1/points/student-guided/${id}`,
-    lecture: `http://localhost:6005/api/v1/points/lecture/${id}`,
-    // "Contribution": `http://localhost:6005/api/v1/points/contribution/${id}`,
-    // "Seminar-attented": `http://localhost:6005/api/v1/points/seminar-attended/${id}`,
+    journals: `https://faculty-appraisal-portal.vercel.app/api/v1/points/journals/${id}`,
+    books: `https://faculty-appraisal-portal.vercel.app/api/v1/points/books/${id}`,
+    chapter: `https://faculty-appraisal-portal.vercel.app/api/v1/points/chapter/${id}`,
+    patents: `https://faculty-appraisal-portal.vercel.app/api/v1/points/patents/${id}`,
+    conferences: `https://faculty-appraisal-portal.vercel.app/api/v1/points/conferences/${id}`,
+    projects: `https://faculty-appraisal-portal.vercel.app/api/v1/points/projects/${id}`,
+    events: `https://faculty-appraisal-portal.vercel.app/api/v1/points/events/${id}`,
+    sttp: `https://faculty-appraisal-portal.vercel.app/api/v1/points/sttp/${id}`,
+    "expert-lectures": `https://faculty-appraisal-portal.vercel.app/api/v1/points/expert-lectures/${id}`,
+    "Student-Guide": `https://faculty-appraisal-portal.vercel.app/api/v1/points/student-guided/${id}`,
+    lecture: `https://faculty-appraisal-portal.vercel.app/api/v1/points/lecture/${id}`,
+    // "Contribution": `https://faculty-appraisal-portal.vercel.app/api/v1/points/contribution/${id}`,
+    // "Seminar-attented": `https://faculty-appraisal-portal.vercel.app/api/v1/points/seminar-attended/${id}`,
   };
 
   const [seminarData, setSeminarData] = useState("");
@@ -53,7 +53,7 @@ export default function AppraisalReportTable() {
         const token = sessionStorage.getItem("adminAccessToken");
 
         const response = await axios.get(
-          `http://localhost:6005/api/v1/admins/teachers/${id}/seminars/conducted`,
+          `https://faculty-appraisal-portal.vercel.app/api/v1/admins/teachers/${id}/seminars/conducted`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

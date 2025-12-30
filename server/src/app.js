@@ -19,6 +19,10 @@ app.use(express.static("public"));
 
 app.use(cookieParser());
 
+app.get('/', (req, res) => {
+  res.send('Hey this is my API running 🥳')
+})
+
 import teacherRouter from "./routes/teachers.routes.js";
 import adminRouter from "./routes/admins.routes.js";
 import studentRouter from "./routes/students.routes.js";

@@ -134,7 +134,7 @@ export default function AdminResearchTable() {
       console.log(response.data.data);
 
       const response2 = await axios.get(
-        `http://localhost:6005/api/v1/publication/all`
+        `https://faculty-appraisal-portal.vercel.app/api/v1/publication/all`
       );
       console.log(response2.data.data);
 
@@ -382,7 +382,7 @@ export default function AdminResearchTable() {
     try {
       const token = sessionStorage.getItem("adminAccessToken");
       const response = await axios.patch(
-        `http://localhost:6005/api/v1/research-paper/update/${rowToEdit._id}`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/research-paper/update/${rowToEdit._id}`,
         formData,
         {
           headers: {
@@ -407,7 +407,7 @@ export default function AdminResearchTable() {
     try {
       const token = sessionStorage.getItem("adminAccessToken");
       await axios.delete(
-        `http://localhost:6005/api/v1/research-paper/delete/${rowToDelete._id}`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/research-paper/delete/${rowToDelete._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -95,7 +95,7 @@ export default function FacultyResearchTable() {
       console.log(response.data.data);
 
       const response2 = await axios.get(
-        `http://localhost:6005/api/v1/publication/all`
+        `https://faculty-appraisal-portal.vercel.app/api/v1/publication/all`
       );
       console.log(response2.data.data);
 
@@ -217,7 +217,7 @@ export default function FacultyResearchTable() {
         "Conference Paper": `/api/v1/conferences2/conference/add/${id}`,
       };
       const response2 = await axios.get(
-        `http://localhost:6005/api/v1/publication/all`
+        `https://faculty-appraisal-portal.vercel.app/api/v1/publication/all`
       );
       console.log(response2.data.data);
       const publication = response2.data.data.find(
@@ -269,7 +269,7 @@ export default function FacultyResearchTable() {
       }
       // console.log(rowToEdit._id);
       const response2 = await axios.get(
-        `http://localhost:6005/api/v1/publication/all`
+        `https://faculty-appraisal-portal.vercel.app/api/v1/publication/all`
       );
       // console.log(response2.data.data);
       const publication = response2.data.data.find(

@@ -21,11 +21,11 @@ export default function FacultyPublicationTable() {
 
         // Define all endpoints
         const endpoints = [
-          "http://localhost:6005/api/v1/domain-points/teacher/te-book",
-          "http://localhost:6005/api/v1/domain-points/teacher/te-patent",
-          "http://localhost:6005/api/v1/domain-points/teacher/te-journal",
-          "http://localhost:6005/api/v1/domain-points/teacher/te-conference",
-          "http://localhost:6005/api/v1/domain-points/teacher/te-chapter",
+          "https://faculty-appraisal-portal.vercel.app/api/v1/domain-points/teacher/te-book",
+          "https://faculty-appraisal-portal.vercel.app/api/v1/domain-points/teacher/te-patent",
+          "https://faculty-appraisal-portal.vercel.app/api/v1/domain-points/teacher/te-journal",
+          "https://faculty-appraisal-portal.vercel.app/api/v1/domain-points/teacher/te-conference",
+          "https://faculty-appraisal-portal.vercel.app/api/v1/domain-points/teacher/te-chapter",
         ];
 
         // Fetch all data concurrently
@@ -65,7 +65,7 @@ export default function FacultyPublicationTable() {
       const token = sessionStorage.getItem("adminAccessToken");
 
       const response = await axios.put(
-        `http://localhost:6005/api/v1/domain-points/admin/points/${id}`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/domain-points/admin/points/${id}`,
         { points: points },
         {
           headers: {

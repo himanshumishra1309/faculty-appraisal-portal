@@ -29,7 +29,7 @@ const AdminAllocateSubjectToStudent = () => {
       try {
         const token = sessionStorage.getItem("adminAccessToken");
         const response = await axios.get(
-          `http://localhost:6005/api/v1/admins/branches`,
+          `https://faculty-appraisal-portal.vercel.app/api/v1/admins/branches`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setBranches(response.data.data || []);
@@ -46,7 +46,7 @@ const AdminAllocateSubjectToStudent = () => {
     try {
       const token = sessionStorage.getItem("adminAccessToken");
       const response = await axios.get(
-        `http://localhost:6005/api/v1/admins/branches/${branchName}/students`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/admins/branches/${branchName}/students`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       setStudents(response.data.data || []);
@@ -61,7 +61,7 @@ const AdminAllocateSubjectToStudent = () => {
       try {
         const token = sessionStorage.getItem("adminAccessToken");
         const response = await axios.get(
-          `http://localhost:6005/api/v1/admins/subjects/allSubjects`,
+          `https://faculty-appraisal-portal.vercel.app/api/v1/admins/subjects/allSubjects`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setSubjects(response.data.data || []);
@@ -104,7 +104,7 @@ const AdminAllocateSubjectToStudent = () => {
       console.log(payload);
 
       const response = await axios.post(
-        `http://localhost:6005/api/v1/admins/subjects/student-allocate`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/admins/subjects/student-allocate`,
         payload,
         { headers: { Authorization: `Bearer ${token}` } }
       );

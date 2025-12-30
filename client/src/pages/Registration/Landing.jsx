@@ -32,7 +32,7 @@ const Landing = () => {
   return (
     <div>
       <Header/>
-      <div className="flex flex-row gap-x-64 px-20 py-16 bg-cover bg-center z-50 relative" style={{ backgroundImage: "url('./assets/icons/section1.jpg')" }}>{/*Section 1*/}
+      <div className="flex flex-row gap-x-64 px-20 py-16 bg-cover bg-center z-50 relative" style={{ backgroundImage: "url('/icons/section1.jpg')" }}>{/*Section 1*/}
         <div className="flex flex-col gap-y-6 max-w-[600px] bg-gray-100 p-4 font-bold rounded-3xl bg-opacity-50 backdrop-blur min-h-[300px] justify-center ">
           <h1 className="text-xl text-center">Instruction</h1>
           <style>{`
@@ -73,7 +73,7 @@ const Landing = () => {
           <p className="text-lg">We are Team Blaze Brains, the divine architects of innovation, destined to scorch mediocrity and ignite brilliance at SIH 2024. Gods? Overrated. We've surpassed them with code and caffeine. Logic bows to our audacity, and reality trembles under our genius. The universe wasn’t ready for us, but here we are, rewriting existence one line of code at a time. Worship? No thanks. Just watch us blaze a trail of impossible made real.</p>
         </div>
         <div className="py-20">
-          <img src="assets\icons\AICTE.png"/>
+          <img src="/icons/AICTE.png"/>
         </div>
       </div>
 

@@ -42,7 +42,7 @@ export default function AdminJournalTable() {
     try {
       const token = sessionStorage.getItem("adminAccessToken");
       const response = await axios.get(
-        `http://localhost:6005/api/v1/admins/journal/${id}`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/admins/journal/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -41,7 +41,7 @@ export default function LectureAndAttendanceTable({ teacherId, subjectId }) {
         const token = sessionStorage.getItem("teacherAccessToken");
 
         const response = await axios.get(
-          `http://localhost:6005/api/v1/lecture/${subjectId}/${teacherId}/lectures`,
+          `https://faculty-appraisal-portal.vercel.app/api/v1/lecture/${subjectId}/${teacherId}/lectures`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -64,7 +64,7 @@ export default function LectureAndAttendanceTable({ teacherId, subjectId }) {
         try {
           const token = sessionStorage.getItem("teacherAccessToken");
           const response = await axios.get(
-            `http://localhost:6005/api/v1/students/${selectedLecture._id}`,
+            `https://faculty-appraisal-portal.vercel.app/api/v1/students/${selectedLecture._id}`,
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -154,7 +154,7 @@ export default function LectureAndAttendanceTable({ teacherId, subjectId }) {
     try {
       const token = sessionStorage.getItem("teacherAccessToken");
       const response = await axios.patch(
-        `http://localhost:6005/api/v1/lecture/${lectureId}/${teacherId}/lectures`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/lecture/${lectureId}/${teacherId}/lectures`,
         updatedData,
         {
           headers: {
@@ -181,7 +181,7 @@ export default function LectureAndAttendanceTable({ teacherId, subjectId }) {
     try {
       const token = sessionStorage.getItem("teacherAccessToken");
       await axios.delete(
-        `http://localhost:6005/api/v1/lecture/${subjectId}/${teacherId}/lectures/${rowToDelete._id}`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/lecture/${subjectId}/${teacherId}/lectures/${rowToDelete._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -204,7 +204,7 @@ export default function LectureAndAttendanceTable({ teacherId, subjectId }) {
     try {
       const token = sessionStorage.getItem("teacherAccessToken");
       const response = await axios.post(
-        `http://localhost:6005/api/v1/lecture/${subjectId}/${teacherId}/lectures`,
+        `https://faculty-appraisal-portal.vercel.app/api/v1/lecture/${subjectId}/${teacherId}/lectures`,
         lectureData,
         {
           headers: {

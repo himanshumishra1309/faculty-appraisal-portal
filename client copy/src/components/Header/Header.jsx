@@ -9,7 +9,7 @@ function Header() {
           <div className='flex items-center space-x-4'>
             <Link to={"#"} className='flex items-center'>
               <img 
-                src='/assets/icons/Logo.svg' 
+                src='/icons/Logo.svg' 
                 alt="College Logo" 
                 className='h-16 w-16 object-contain'
               />
@@ -31,7 +31,7 @@ function Header() {
               Faculty Appraisal System
             </h2>
             <img 
-              src='/assets/icons/emblem.svg' 
+              src='/icons/emblem.svg' 
               alt="Government Emblem" 
               className='h-16 w-16 object-contain'
             />

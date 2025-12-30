@@ -7,7 +7,7 @@ function ResponsiveFooter() {
       <div className='container mx-auto px-4'>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
           <div className='flex flex-col items-center sm:items-start'>
-            <img src="/assets/icons/govt-logo.svg" alt="Government Logo" className="h-16 mb-4" />
+            <img src="/icons/govt-logo.svg" alt="Government Logo" className="h-16 mb-4" />
             <p className='text-sm text-center sm:text-left'>Education Department<br />Govt. of NCT of Delhi</p>
           </div>
           <div>
@@ -42,13 +42,13 @@ function ResponsiveFooter() {
           <p className='text-sm text-center sm:text-left mb-4 sm:mb-0'>&copy; 2024 Education Department, Govt. of NCT of Delhi. All Rights Reserved.</p>
           <div className='flex space-x-4'>
             <a href="#" aria-label="Facebook" className="hover:opacity-80 transition-opacity">
-              <img src="/assets/icons/facebook.svg" alt="Facebook" className="h-6 w-6" />
+              <img src="/icons/facebook.svg" alt="Facebook" className="h-6 w-6" />
             </a>
             <a href="#" aria-label="Twitter" className="hover:opacity-80 transition-opacity">
-              <img src="/assets/icons/twitter.svg" alt="Twitter" className="h-6 w-6" />
+              <img src="/icons/twitter.svg" alt="Twitter" className="h-6 w-6" />
             </a>
             <a href="#" aria-label="LinkedIn" className="hover:opacity-80 transition-opacity">
-              <img src="/assets/icons/linkedin.svg" alt="LinkedIn" className="h-6 w-6" />
+              <img src="/icons/linkedin.svg" alt="LinkedIn" className="h-6 w-6" />
             </a>
           </div>
         </div>

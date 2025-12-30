@@ -14,7 +14,7 @@ export default function FacultyAvatar() {
 
     try { 
       await axios.post(
-        "http://localhost:6005/api/v1/teachers/logout",
+        "https://faculty-appraisal-portal.vercel.app/api/v1/teachers/logout",
         {},
         {
           headers: {

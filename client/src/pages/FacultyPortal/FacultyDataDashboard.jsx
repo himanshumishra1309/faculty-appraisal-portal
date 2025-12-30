@@ -1,8 +1,4 @@
 import React from "react";
-import FacultyResearchAreaPieChart from "@/Charts/FacultyDataDashboard/Pie";
-import FacultyTeachingHoursLineChart from "@/Charts/FacultyDataDashboard/Line";
-import FacultyPublicationsBarChart from "@/Charts/FacultyDataDashboard/BarChart";
-import DepartmentGrowthLineChart from "@/Charts/Data/fakeData/Admin Dashboard/DepartmentGrowthLineChart";
 import { useParams } from "react-router-dom";
 
 export default function FacultyDataDashboard() {
@@ -21,7 +17,6 @@ export default function FacultyDataDashboard() {
       </div> */}
 
       <div className="col-span-3 bg-white shadow-md p-4 rounded-lg">
-        <DepartmentGrowthLineChart id={id} />
       </div>
     </div>
   );

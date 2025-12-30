@@ -15,7 +15,7 @@ export default function ResponsiveHeader() {
       <div className="flex items-center space-x-4">
         <Link to="/faculty-home" className="flex items-center space-x-2">
           <img
-            src="/assets/icons/Logo.svg"
+            src="/icons/Logo.svg"
             alt="College Logo"
             className="h-12 w-12"
           />

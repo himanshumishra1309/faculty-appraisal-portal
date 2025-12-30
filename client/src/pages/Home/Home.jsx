@@ -43,7 +43,7 @@ const Home = () => {
                   className="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center justify-center h-full border border-blue-100 hover:shadow-xl transition-all duration-300"
                 >
                   <img
-                    src={`/assets/icons/${item.icon}`}
+                    src={`/icons/${item.icon}`}
                     alt={`${item.title} Icon`}
                     className="h-24 w-24 mb-6 object-contain"
                   />

@@ -32,7 +32,7 @@ const Landing = () => {
   return (
     <div>
       <Header/>
-      <div className="flex flex-row gap-x-64 px-20 py-16 bg-cover bg-center z-50 relative" style={{ backgroundImage: "url('./assets/icons/section1.jpg')" }}>{/*Section 1*/}
+      <div className="flex flex-row gap-x-64 px-20 py-16 bg-cover bg-center z-50 relative" style={{ backgroundImage: "url('/icons/section1.jpg')" }}>{/*Section 1*/}
         <div className="flex flex-col gap-y-6 max-w-[600px] bg-gray-100 p-4 font-bold rounded-3xl bg-opacity-50 backdrop-blur min-h-[300px] justify-center ">
           <h1 className="text-xl text-center">Instruction</h1>
           <style>{`

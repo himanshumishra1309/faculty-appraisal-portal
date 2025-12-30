@@ -84,7 +84,7 @@ Before you begin, make sure you have the following installed on your system:
 Open your terminal and run:
 
 ```bash
-git clone https://github.com/your-username/faculty-appraisal-portal.git
+git clone https://github.com/himanshumishra1309/faculty-appraisal-portal.git
 cd faculty-appraisal-portal
 ```
 
@@ -192,7 +192,7 @@ A popup will appear asking you to create a database user:
 2. Select **"Compass"** (or "Drivers" works too)
 3. You'll see a connection string that looks like:
    ```
-   mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/
+   mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net
    ```
 4. **Copy this entire URL**
 

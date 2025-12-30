@@ -2,6 +2,8 @@
 
 🌐 **Live Demo**: [https://faculty-appraisal-web-portal.vercel.app/](https://faculty-appraisal-web-portal.vercel.app/)
 
+📚 **Documentation**: [https://www.notion.so/Faculty-Appraisal-System-2d9e01623804802dba97cf397f7047ef](https://www.notion.so/Faculty-Appraisal-System-2d9e01623804802dba97cf397f7047ef)
+
 ---
 
 ## 🌟 The Challenge We're Solving

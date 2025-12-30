@@ -8,21 +8,9 @@ function Header() {
         <div className='flex justify-between items-center'>
           <div className='flex items-center space-x-4'>
             <Link to={"#"} className='flex items-center'>
-              <img 
-                src='/icons/Logo.svg' 
-                alt="College Logo" 
-                className='h-16 w-16 object-contain'
-              />
             </Link>
             <div className='border-l-2 border-blue-300 pl-4'>
-              <Link to={"#"} className='text-white hover:text-blue-200 transition duration-300'>
-                <h1 className='text-2xl font-semibold leading-tight'>
-                  Education Department
-                </h1>
-                <p className='text-sm text-blue-200'>
-                  Govt. of NCT of Delhi
-                </p>
-              </Link>
+
             </div>
           </div>
           

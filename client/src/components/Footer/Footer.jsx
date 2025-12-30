@@ -7,8 +7,6 @@ function ResponsiveFooter() {
       <div className='container mx-auto px-4'>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
           <div className='flex flex-col items-center sm:items-start'>
-            <img src="/icons/govt-logo.svg" alt="Government Logo" className="h-16 mb-4" />
-            <p className='text-sm text-center sm:text-left'>Education Department<br />Govt. of NCT of Delhi</p>
           </div>
           <div>
             <h3 className='font-semibold text-lg mb-4'>Quick Links</h3>
@@ -32,8 +30,6 @@ function ResponsiveFooter() {
             <h3 className='font-semibold text-lg mb-4'>Contact Us</h3>
             <address className='not-italic text-sm'>
               <p>Education Department</p>
-              <p>Old Secretariat, Delhi-110054</p>
-              <p>Email: info@education.delhi.gov.in</p>
               <p>Phone: +91-11-23890000</p>
             </address>
           </div>

@@ -14,17 +14,7 @@ export default function ResponsiveHeader() {
     <header className="flex justify-between items-center py-2 px-4 bg-gradient-to-r from-blue-700 to-blue-900 shadow-lg text-white">
       <div className="flex items-center space-x-4">
         <Link to="/faculty-home" className="flex items-center space-x-2">
-          <img
-            src="/icons/Logo.svg"
-            alt="College Logo"
-            className="h-12 w-12"
-          />
-          <div className="hidden sm:block">
-            <h1 className="text-lg font-semibold leading-tight">
-              Education Department
-            </h1>
-            <p className="text-sm">Govt. of NCT of Delhi</p>
-          </div>
+
         </Link>
       </div>
 

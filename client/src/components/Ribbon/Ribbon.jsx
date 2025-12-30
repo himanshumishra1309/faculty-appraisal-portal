@@ -43,9 +43,7 @@ const Ribbon = () => {
       <div className="container mx-auto flex justify-between items-center px-2">
         {/* Logo */}
         <div className="text-sm font-bold">
-          <a href="/" className="hover:text-blue-600">
-            Government of NCT of Delhi | AICTE
-          </a>
+    
         </div>
 
         {/* Navigation Links */}

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Footer, Header } from "@/components";
 import Ribbon from '/src/components/Ribbon/Ribbon';
 import Landing from "../Registration/Landing";
-
 const Home = () => {
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },

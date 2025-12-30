@@ -2,6 +2,14 @@
 
 🌐 **Live Demo**: [https://faculty-appraisal-web-portal.vercel.app/](https://faculty-appraisal-web-portal.vercel.app/)
 
+### Login Credentials
+
+| **Role**    | **Username**               | **Password** |
+|-------------|----------------------------|--------------|
+| **Admin**   | `admin@gmail.com`           | `admin`      |
+| **Faculty** | `akhiljaiby@gmail.com`      | `1234`       |
+| **Student** | `himanshu@gmail.com`        | `1234`       |
+
 ---
 
 ## 🌟 The Challenge We're Solving

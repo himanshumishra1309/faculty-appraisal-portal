@@ -2,14 +2,6 @@
 
 🌐 **Live Demo**: [https://faculty-appraisal-web-portal.vercel.app/](https://faculty-appraisal-web-portal.vercel.app/)
 
-### Login Credentials
-
-| **Role**    | **Username**               | **Password** |
-|-------------|----------------------------|--------------|
-| **Admin**   | `admin@gmail.com`           | `admin`      |
-| **Faculty** | `akhiljaiby@gmail.com`      | `1234`       |
-| **Student** | `himanshu@gmail.com`        | `1234`       |
-
 ---
 
 ## 🌟 The Challenge We're Solving
@@ -62,6 +54,16 @@ The **Faculty Appraisal Portal** is a comprehensive, intelligent system that tra
 ### The Impact
 
 This platform transforms appraisal from a bureaucratic burden into a strategic advantage. Faculty feel valued with clear visibility of their contributions. Administrators gain data-driven insights for informed decision-making. Institutions foster a culture where excellence is recognized, growth is nurtured, and every educator's journey is supported by technology that works as tirelessly as they do.
+
+---
+
+### Login Credentials
+
+| **Role**    | **Username**               | **Password** |
+|-------------|----------------------------|--------------|
+| **Admin**   | `admin@gmail.com`           | `admin`      |
+| **Faculty** | `akhiljaiby@gmail.com`      | `1234`       |
+| **Student** | `himanshu@gmail.com`        | `1234`       |
 
 ---
 
